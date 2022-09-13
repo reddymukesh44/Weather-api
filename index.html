@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ebda61e3fa.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="search-bar">
+            <input class="input-search" type="text" placeholder="city name">
+            <div class="search-btn">
+                <span class="fa fa-search"></span>
+            </div>
+        </div>
+        <div class="weather-container">
+            <div class="section-right">
+                <div class="icon-bar">
+                    <img src="public/images/4102326_cloud_sun_sunny_weather_icon.png" class="icon-weather">
+                </div>
+                <div>
+                    <p class="main-temp"></p>
+                </div>
+                <div>
+                    <p class="infomation"></p>
+                </div>
+                <div class="city-bar">
+                    <span class="fa fa-map-marker"></span>
+                    <p class="country"></p>
+                    <p class="city">Windsor</p>
+                </div>
+                <div class="feel-container">
+                    <div class="feel-temp">
+                        <p>Feels Like</p>
+                        <p class="feel"></p>
+                    </div>
+                    <div class="deg-wind">
+                        <span class="fas fa-location-arrow deg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="section-left">
+                <div class="item-left time">
+                    <div>
+                        <span class="far fa-clock"></span>
+                        <span class="hour"></span><span>:</span><span class="minute"></span>
+                    </div>
+                </div>
+                <div class="item-left min-max-temp">
+
+                    <p class="title">max min</p>
+
+                    <div><span class="max-temp"></span>
+                        <span class="fas fa-long-arrow-alt-up"></span>
+                        <span class="fas fa-long-arrow-alt-down"></span>
+                        <span class="min-temp"></span>
+                    </div>
+                </div>
+                <div class="item-left">
+                    <p class="title"><span class="fa fa-tint"></span> Humidity</p>
+                    <p class="humidity"></p>
+                </div>
+                <div class="item-left">
+                    <p class="title"><span class="fas fa-wind"></span> Wind Speed</p>
+                    <p class="wind"></p>
+                </div>
+            </div>
+            <div class="sun-status">
+                <div class="sunset">
+                    <p>Sunrise</p>
+                    <div class="sun-box">
+                        <img src="public/images/sunrise.jpeg" alt="">
+                        <div>
+                            <span class="hoursunrice"></span><span>:</span><span class="minutesunrise"></span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="sunrise">
+                    <p>Sunset</p>
+                    <div class="sun-box">
+                        <img src="public/images/sunset.png" alt="">
+                        <div>
+                            <span class="hoursunset"></span><span>:</span><span class="minutesunset"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="public/js/app.js" defer></script>
+</body>
+
+</html>
